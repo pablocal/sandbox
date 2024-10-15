@@ -11,12 +11,12 @@
 #
 #
 # Options and packages ----------------------------------------------------
-setwd("C:/git/sandbox")
 library(tidyverse)
 
-df <- "02_data/mtcars_clean.csv" %>% 
+df <- "02_data/mtcars_clean.RDS" %>% 
   read_rds()
 
-qplot(mpg, hp, data = df) %>% 
-  ggsave("03_output/plot-this.png")
+qplot(mpg, hp, data = df)
+
+ggsave("03_output/plot-this.png")
 

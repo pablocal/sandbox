@@ -11,7 +11,6 @@
 #
 #
 # Options and packages ----------------------------------------------------
-setwd("C:/github/sandbox/")
 library(tidyverse)
 
 df <- as_tibble(mtcars) %>% 
